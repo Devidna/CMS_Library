@@ -1,0 +1,245 @@
+/* css/style.css */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"], input[type="password"], input[type="number"], input[type="file"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #45a049;
+}
+
+input[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.cover-preview {
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 15px;
+}
+
+/* Header styles */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+/* Welcome message styles */
+.welcome-message {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Menu styles */
+.menu-list {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-item {
+    margin-bottom: 10px;
+}
+
+.menu-link {
+    display: block;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-link:hover {
+    background-color: #45a049;
+}
+
+/* Table styles */
+table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Hover effect on table rows */
+tr:hover {
+    background-color: #ddd;
+}
+
+ /* Styles for pagination */
+ .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+ /* Add styling for pagination links */
+ .pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.pagination a.active {
+    background-color: #ccc;
+    color: #4CAF50;
+    border: 1px solid #ccc;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+/* Link styles for "Kembali" button */
+.back-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.back-link:hover {
+    background-color: #45a049;
+}
+
+/* Gaya untuk grup tombol */
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+/* Gaya untuk tombol Print */
+.print-btn, .book-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.print-btn:hover, .book-btn:hover {
+    background-color: #45a049;
+}
+
+/* Button styles for edit and delete buttons */
+.edit-btn, .delete-btn, .borrow-btn, .return-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 5px;
+}
+
+.delete-btn {
+    background-color: #f44336;
+}
+
+.edit-btn:hover, .borrow-btn:hover, .return-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Adjust table width for smaller screens */
+@media screen and (max-width: 600px) {
+    table {
+        width: 100%;
+    }
+}
+
+/* Logout link styles */
+.logout-link {
+    color: #f44336;
+}
+
+.logout-link:hover {
+    color: #d32f2f;
+}
